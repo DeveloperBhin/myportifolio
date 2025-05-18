@@ -1,0 +1,13 @@
+react
+react-dom
+react-scripts
+emailjs-com
+tailwindcss
+postcss
+autoprefixer
+react-router-dom
+redux
+@reduxjs/toolkit
+axios
+formik
+yup
