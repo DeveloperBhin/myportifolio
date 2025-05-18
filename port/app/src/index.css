@@ -1,0 +1,69 @@
+@import "tailwindcss";
+.custom-swiper .swiper-slide {
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.slide-item {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  min-height: 250px;
+}
+
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), transparent);
+  z-index: 1;
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .slide-text {
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .slide-text {
+    bottom: 2rem;
+    left: 2.5rem;
+  }
+}
+
+.slide-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  .slide-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .slide-title {
+    font-size: 1.75rem;
+  }
+}
+
+.slide-desc {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .slide-desc {
+    font-size: 0.875rem;
+  }
+}
