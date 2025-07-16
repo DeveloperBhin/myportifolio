@@ -1,31 +1,64 @@
-import './App.css';
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import React, { useState } from 'react'; 
+import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-import Home from './pages/Home';
-import Tools from './pages/Tools';
-import Journey from './pages/Journey';
-import Recents from './pages/Recents';
-import Contacts from './pages/Contacts';
-import Contactinfo from './pages/Contactinfo';
 
-function App() {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false); // close mobile menu after clicking
+    }
+  };
+
   return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/tools" element={<Tools />} />
-        <Route path="/journey" element={<Journey />} />
-        <Route path="/works" element={<Recents />} />
-        <Route path="/contact" element={<Contacts />} />
-        <Route path="/contact-info" element={<Contactinfo />} />
-      </Routes>
-      <Footer />
-    </>
-  );
-}
+    <nav className='bg-neutral-950 text-pink-800 p-4 shadow-md'>
+      <div className='container mx-auto flex justify-between items-center'>
+        <div className='text-2xl font-semibold'>
+          {/* Your logo here */}
+        </div>
 
-export default App;
+        <div className='md:hidden'>
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {/* Desktop Menu */}
+        <ul className='hidden md:flex space-x-6 text-lg'>
+          <li><button onClick={() => scrollToSection('home')} className="hover:text-yellow-300">Home</button></li>
+          <li><button onClick={() => scrollToSection('tool')} className="hover:text-yellow-300">Tool&Tech</button></li>
+          <li><button onClick={() => scrollToSection('journey')} className="hover:text-yellow-300">The Journey</button></li>
+          <li><button onClick={() => scrollToSection('works')} className="hover:text-yellow-300">Recent Works</button></li>
+          <li><button onClick={() => scrollToSection('contacts')} className="hover:text-yellow-300">Contacts</button></li>
+        
+         
+        </ul>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <ul className='md:hidden mt-4 space-y-4 px-4 text-lg'>
+          <li><button onClick={() => scrollToSection('home')} className="block hover:text-yellow-300">Home</button></li>
+          <li><button onClick={() => scrollToSection('tool')} className="block hover:text-yellow-300">Tool&Tech</button></li>
+          <li><button onClick={() => scrollToSection('journey')} className="block hover:text-yellow-300">The Journey</button></li>
+          <li><button onClick={() => scrollToSection('works')} className="block hover:text-yellow-300">Recent Works</button></li>
+          <li><button onClick={() => scrollToSection('contacts')} className="block hover:text-yellow-300">Contacts</button></li>
+        </ul>
+      )}
+    
+    </nav>
+   
+  );
+
+
+  
+
+  
+};
+
+
+export default Navbar;
