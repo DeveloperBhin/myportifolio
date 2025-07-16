@@ -38,7 +38,7 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "vite": "^6.3.1"
-  }
-  "homepage": "https://github.com/DeveloperBhin/myportifolio.git"
+  },
+  "homepage": "https://DeveloperBhin.github.io/myportifolio"
 
 }
