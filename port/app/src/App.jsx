@@ -18,7 +18,7 @@ import Journey from './pages/Journey';
 import Recents from './pages/Recents';
 
 import Contacts from './pages/Contacts';
-import Contactinfo from './pages/Contanctinfo'
+import Contactinfo from './pages/Contactinfo'
 
 
 import MobileApp from './pages/MobileApp';
