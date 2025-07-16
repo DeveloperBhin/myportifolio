@@ -14,7 +14,7 @@ import Carouseltxt from './components/Carouseltxt';
 
 import Tools from './pages/Tools';
 
-import Journey from './pages/journey';
+import Journey from './pages/Journey';
 import Recents from './pages/Recents';
 
 import Contacts from './pages/Contacts';
