@@ -11,7 +11,7 @@ import './Carousel.css';
 
 const Carousel = () => {
   return (
-    <div className='w-full max-w-full mx-auto h-[50vh] min-h-[250px]'>
+    <div className='w-full max-w-full mx-auto h-[65vh] min-h-[250px]'>
       <Swiper
         direction="vertical"
         modules={[Pagination, Autoplay]}

@@ -7,7 +7,7 @@ const Footer = () => {
         Projects:
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  p-4 text-white gap-4">
+      <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3  p-4 text-white gap-4">
         <div className=" rounded-2xl text-lg sm:text-2xl shadow-2xl overflow-auto p-4">
           <p className="text-2xl font-bold sm:text-3xl p-2"> BidhaaLink – Online Product Marketplace</p>
           <p className="p-2">
@@ -60,20 +60,8 @@ PythonMzumbe is an educational platform developed to help Mzumbe University stud
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  text-white p-4 gap-4">
-        <div className=" rounded-2xl text-lg sm:text-2xl shadow-2xl p-4">
-          <p className="text-2xl sm:text-3xl p-2 font-bold">DMG – Digital Marketing Guide Platform</p>
-          <p className="p-2">
-        
- <img src='/dmg.png' className='w-full h-full object-cover' alt="Slide 2" />
-   
-
-DMG provides guides and resources for digital marketing, including SEO, content marketing, and social media strategies. It includes categorized blog posts, downloadable PDFs, and a content management backend.
-
- </p>
-
-        </div>
-
+      <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3  text-white p-4 gap-4">
+     
         <div className=" rounded-2xl text-lg sm:text-2xl shadow-2xl p-4">
           <p className="text-2xl sm:text-3xl p-2 font-bold">      MHD – Modern Home Decor Sales Platform</p>
           <p className="p-2">

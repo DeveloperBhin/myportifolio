@@ -17,31 +17,26 @@ const Footer=()=>{
             <a href='	http://bidhaalink.com/' className='text-amber-200 '>Bidhaalink</a>
           </div>
           <div>
-          <h3 className=" text-center font-bold text-amber-700">OUR SOCIAL MEDIA</h3>
+          <h3 className="  font-bold text-amber-700">OUR SOCIAL MEDIA</h3>
       
-          <div class="grid grid-cols-5 text-center p-2 gap-0" >
+          <div class="grid grid-cols-5 text-center  p-2 gap-0" >
       
         
         <div> 
       <a href="https://wa.me/255759233403" className=" text  ">
-        <img src="/tsp.png "className="w-10   rounded-full"/>
+        <img src="/whatsapp.png "className="w-10   rounded-full"/>
         
     </a>
     </div> 
-    <div> 
-      <a href="https://www.facebook.com/share/19Svf7oGNh/?mibextid=wwXIfr" className=" text  ">
-        <img src="/fb.png "className="w-10   rounded-full"/>
-        
-    </a>
-    </div>
+   
     <div> 
       <a href="https://www.instagram.com/dmgtechnology_?igsh=MWoyNDZ5dG82aGFtcw%3D%3D&utm_source=qr" className=" text  ">
-        <img src="/inst.png "className="w-10   rounded-full"/>
+        <img src="/social.png "className="w-10   rounded-full"/>
         
     </a>
     </div>   <div> 
       <a href="https://www.linkedin.com/in/ditram-aristid-0838b8310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className=" text  ">
-        <img src="/lnk.png "className="w-10   rounded-full"/>
+        <img src="/linkedin (5).png "className="w-10   rounded-full"/>
         
     </a>
     </div>    

@@ -1,66 +1,79 @@
-import './App.css';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import './App.css';
 
+// Layout components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+// Hero and section components
 import Carouseltxt from './components/Carouseltxt';
 import Carouselup from './components/Carouselup';
 
+// Page sections
 import Tools from './pages/Tools';
 import Journey from './pages/Journey';
 import Recents from './pages/Recents';
 import Contacts from './pages/Contacts';
+
+// Standalone pages
 import Contactinfo from './pages/Contactinfo';
 import MobileApp from './pages/MobileApp';
 import Custom from './pages/Custom';
+
+// Optional carousel
 import CircleCarousel from './components/CircleCarousel';
 
 function HomePage() {
   return (
-    <>
-      <div id="home" className="bg-gray-100">
-        <div className="grid grid-cols-1 md:grid-cols-2 bg-black">
+    <main className="overflow-x-hidden">
+      {/* Hero Section */}
+      <section id="home" className="bg-gray-100">
+        <div className="grid grid-cols-2 md:grid-cols-2 bg-black text-white "  >
           <div><Carouseltxt /></div>
           <div><Carouselup /></div>
         </div>
-      </div>
+      </section>
 
-      <div id="tool" className="bg-[#161a22]">
+      {/* Tools Section */}
+      <section id="tool" className="bg-[#161a22] py-8">
         <Tools />
-      </div>
+      </section>
 
-      <div id="journey" className="bg-gray-300">
+      {/* Journey Section */}
+      <section id="journey" className="bg-gray-300 py-8">
         <Journey />
-      </div>
+      </section>
 
-      <div id="works" className="bg-[#161a22]">
+      {/* Works Section */}
+      <section id="works" className="bg-[#161a22] py-8">
         <Recents />
-      </div>
+      </section>
 
-      <div id="contacts" className="bg-[#0c111b] p-3">
+      {/* Contacts Section */}
+      <section id="contacts" className="bg-[#0c111b] text-white py-8">
         <Contacts />
-      </div>
-    </>
+      </section>
+    </main>
   );
 }
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/Contactinfo" element={<Contactinfo />} />
-        <Route path="/MobileApp" element={<MobileApp />} />
-        <Route path="/Custom" element={<Custom />} />
-        {/* You can add more routes here as needed */}
-      </Routes>
+      <div className="flex-grow">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/contactinfo" element={<Contactinfo />} />
+          <Route path="/mobileapp" element={<MobileApp />} />
+          <Route path="/custom" element={<Custom />} />
+        </Routes>
+      </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

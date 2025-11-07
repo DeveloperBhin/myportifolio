@@ -7,7 +7,7 @@ const Footer = () => {
         Expertise (Tools & Tech):
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  p-4 text-white gap-4">
+      <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3  p-4 text-white gap-4">
         <div className="border rounded-2xl text-lg sm:text-2xl shadow-2xl overflow-auto p-4">
           <p className="text-2xl sm:text-3xl p-2">🧑‍💻 Web Development (Frontend & Backend)</p>
           <p className="p-2">
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  text-white p-4 gap-4">
+      <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3  text-white p-4 gap-4">
         <div className="border rounded-2xl text-lg sm:text-2xl shadow-2xl p-4">
           <p className="text-2xl sm:text-3xl p-2"> Machine Learning & Algorithms</p>
           <p className="p-2">
